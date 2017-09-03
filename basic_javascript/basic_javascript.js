@@ -1,5 +1,5 @@
-console.log("Running Basic Javascript...")
-
+console.log("Running Basic Javascript...");
+////
 function golfScore (par, strokes){
 	result = '';
 	if ( strokes == 1){
@@ -206,7 +206,7 @@ var myDog = {
 	legs: 4,
 	tails: 1,
 	friends: "Popcorn"
-}
+};
 
 
 var lookup = {
@@ -216,7 +216,7 @@ var lookup = {
      "delta": "Denver",
      "echo": "Easy",
      "foxtrot" : "Frank"
-}
+};
 
 
 // Example
@@ -259,4 +259,61 @@ var myArray = [];
 // 
 // console.log(total);
 
+
+//Setup
+// var contacts = [
+//     {
+//         "firstName": "Akira",
+//         "lastName": "Laine",
+//         "number": "0543236543",
+//         "likes": ["Pizza", "Coding", "Brownie Points"]
+//     },
+//     {
+//         "firstName": "Harry",
+//         "lastName": "Potter",
+//         "number": "0994372684",
+//         "likes": ["Hogwarts", "Magic", "Hagrid"]
+//     },
+//     {
+//         "firstName": "Sherlock",
+//         "lastName": "Holmes",
+//         "number": "0487345643",
+//         "likes": ["Intriguing Cases", "Violin"]
+//     },
+//     {
+//         "firstName": "Kristian",
+//         "lastName": "Vos",
+//         "number": "unknown",
+//         "likes": ["Javascript", "Gaming", "Foxes"]
+//     }
+// ];
+// 
+// 
+// function lookUpProfile(firstName, prop){
+// // Only change code below this line
+// 	var foundPerson = false;
+// 	for( var i = 0 ; i < contacts.length ; i++){
+// 		if (contacts[i].firstName == firstName){
+// 			foundPerson = contacts[i];
+// 			break;
+// 		}
+// 			
+// 	}
+// 	if (foundPerson){
+// 		if (foundPerson.hasOwnProperty(prop)){
+// 			return foundPerson[prop];
+// 		}
+// 		else {
+// 			return "No such property";
+// 		}
+// 	}
+// 	else{
+// 		return "No such contact";
+// 	}
+// 
+// // Only change code above this line
+// }
+// 
+// Change these values to test your function
+// console.log (lookUpProfile("Akira", "likes"));
 
