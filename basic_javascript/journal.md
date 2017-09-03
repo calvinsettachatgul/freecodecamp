@@ -20,4 +20,13 @@ going through free codecamp javascript exercises
 
 get to activity	235
 
-
+  {
+    "artist": "U2",
+    "title": "With Or Without You",
+    "release_year": 1973,
+    "formats": [ 
+      "CS", 
+      "8T", 
+      "LP" ],
+    "gold": true
+  }

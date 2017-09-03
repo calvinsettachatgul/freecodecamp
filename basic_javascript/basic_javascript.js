@@ -1,3 +1,5 @@
+console.log("Running Basic Javascript...")
+
 function golfScore (par, strokes){
 	result = '';
 	if ( strokes == 1){
@@ -215,3 +217,46 @@ var lookup = {
      "echo": "Easy",
      "foxtrot" : "Frank"
 }
+
+
+// Example
+//var ourArray = [];
+//
+//for (var i = 0; i < 10; i += 2) {
+//  ourArray.push(i);
+//}
+//
+//// Setup
+var myArray = [];
+
+// for (var i = 1; i < 10 ; i += 2){
+// 	myArray.push(i);
+// }
+// console.log(myArray);
+
+// Only change code below this line.
+
+
+
+
+// change our initialization and final-expression so we can count backward by twos by odd numbers.
+// var myArray = [];
+// for ( var i = 9; i > 0 ; i -= 2){
+// 	myArray.push(i);
+// }
+
+
+// Iterate Through an Array with a For loop
+// Declare and initialize a variable total to 0. Use a for loop to add the value of each element of the myArr array to total.
+
+// var total = 0
+// 
+// var myArr = [ 2, 3, 4, 5, 6];
+// 
+// for ( var i=0; i < myArr.length ; i++){
+// 	total += myArr[i];
+// }
+// 
+// console.log(total);
+
+
