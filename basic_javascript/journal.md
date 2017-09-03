@@ -17,3 +17,7 @@ going through free codecamp javascript exercises
 	else if (num >= 20){
 		return "Huge";
 	}
+
+get to activity	235
+
+
