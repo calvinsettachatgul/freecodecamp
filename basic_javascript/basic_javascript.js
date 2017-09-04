@@ -1,4 +1,7 @@
+print = require("pretty-print");
+
 console.log("Running Basic Javascript...");
+console.log("Executes whenever there is a file change using grunt.");
 ////
 function golfScore (par, strokes){
 	result = '';
@@ -317,3 +320,70 @@ var myArray = [];
 // Change these values to test your function
 // console.log (lookUpProfile("Akira", "likes"));
 
+
+// var testString = "There are 3 cats but 4 dogs.";
+// var expression = /\d+/g;
+// var digitCount = testString.match(expression).length;
+// 
+// console.log(digitCount);
+
+
+// Setup
+// var testString = "How many spaces are there in this sentence?";
+// 
+// // Only change code below this line.
+// 
+// var expression = /\s+/g;  // Change this line
+// 
+// // Only change code above this line
+// 
+// // This code counts the matches of expression in testString
+// var spaceCount = testString.match(expression).length;
+// 
+// 
+// console.log(spaceCount);
+
+
+// var car = {
+//   "wheels":4,
+//   "engines":1,
+//   "seats":5
+// };
+// 
+// var motorBike = {
+// 	"wheels": 4, 
+// 	"engines": 1, 
+// 	"seats": 2, 
+// };
+// 
+// print( motorBike);
+
+// condense arrays with reduce 
+// https://www.freecodecamp.org/challenges/condense-arrays-with-reduce
+
+
+// var array = [4,5,6,7,8];
+// var singleVal = 0;
+// 
+// // Only change code below this line.
+// 
+// 
+// singleVal = array.reduce( function(prev, curr){
+//   return prev + curr;
+// }, 0);
+
+// filter arrays with filter
+// https://www.freecodecamp.org/challenges/filter-arrays-with-filter
+
+
+// var oldArray = [1,2,3,4,5,6,7,8,9,10];
+// 
+// // Only change code below this line.
+// 
+// var newArray = oldArray.filter(function(val){
+// 	return val <= 6;
+// });
+// 
+// console.log(newArray);
+
+// https://www.freecodecamp.org/challenges/sort-arrays-with-sort
