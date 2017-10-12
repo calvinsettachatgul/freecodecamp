@@ -26,7 +26,6 @@ function translatePigLatin(str) {
         return str + "way";
     }else{
         var vowel_index = str.search(vowel_re);
-        // console.log("vowel_index",vowel_index);
         var consonant_cluster = str.substr(0, vowel_index);
         return str.substr(vowel_index) + consonant_cluster + 'ay';
     }
