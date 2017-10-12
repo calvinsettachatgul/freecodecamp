@@ -19,24 +19,28 @@ Array.prototype.concat()
 
 function diffArray(arr1, arr2) {
     var newArr = [];
-    let present = {};
-    
-    var combined_arr = arr1.concat(arr2)
-    console.log(combined_arr);
 
-    combined_arr.forEach(function(el){
-        if(present[el] == el){
-            present[el] = false;
-        }else{
-            present[el] = el;
-        }
+    let present_arr1 = {};
+    let present_arr2 = {};
 
+    arr1.forEach(function(el){
+        present_arr1[el] = true;
     })
 
-    Object.keys(present).forEach(function(el){
-        if(present[el] !== false){
-            newArr.push(present[el]);
-        }
+    arr2.forEach(function(el){
+        present_arr2[el] = true;
+    })
+
+
+    Object.keys(present_arr1).forEach(function(el){
+        if(present_arr2[el] !== true){
+            newArr.push(parseInt(el));
+        }; 
+    })
+    Object.keys(present_arr2).forEach(function(el){
+        if( present_arr1[el] !== true){
+            newArr.push(parseInt(el));
+        }; 
     })
 
     // Same, same; but different.

@@ -16,12 +16,11 @@ Array.prototype.reduce()
 
 
 function sumAll(arr) {
-    var sum = 0;
     var end_ind = Math.max(arr[0], arr[1]);
     var start_ind  = Math.min(arr[0], arr[1]);
     for (var i = start_ind ; i <= end_ind; i++){
         sum += i;
-    }
+    };
     return sum;
 }
 
