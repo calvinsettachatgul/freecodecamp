@@ -10,10 +10,15 @@ function myReplace(str, before, after) {
            replace_index = i;
         }    
     }
-    console.log(replace_index);
 
-    return str;
+    if( before !== before.toLowerCase()){
+        after = after[0] + after.substr(1);
+    }
+    
+    str_arr.splice(replace_index, 1, after);
+
+    return str_arr.join(" ");
 }
 
-myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+console.log( myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
 
