@@ -19,15 +19,10 @@ function convertHTML(str) {
                             "&": "&amp;", 
                             "<": "&lt;", 
                             ">": "&gt;", 
-                            "\"": "&quote;", 
+                            "\"": "&quot;", 
                             "'": "&apos;", 
                             
                         }
-    console.log(html_entities["&"]);
-    console.log(html_entities["<"]);
-    console.log(html_entities[">"]);
-    console.log(html_entities["\""]);
-    console.log(html_entities["'"]);
     str_arr = str.split("");
     var new_str_arr = str_arr.map(function(char){
         if(html_entities[char]){
@@ -39,6 +34,6 @@ function convertHTML(str) {
     return new_str_arr.join("");
 }
 
-console.log(convertHTML("Dolce & Gabbana"));
-console.log(convertHTML('Dolce & "Gabbana"'));
+// console.log(convertHTML("Dolce & Gabbana"));
+console.log(convertHTML('Stuff in "quotation marks"'));
 
