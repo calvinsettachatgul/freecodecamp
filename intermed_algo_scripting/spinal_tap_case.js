@@ -14,11 +14,16 @@ String.prototype.replace()
 function spinalCase(str) {
     // "It's such a fine line between stupid, and clever."
     // --David St. Hubbins
-    re_delim = /[\s_-]/g
+    re_delim = /[\s_-]/g;
     var match_delim = str.match(re_delim);
-    console.log(match_delim);
-    return str;
+    var new_str = str.replace(re_delim, "-");
+
+    // re_conson = /([a-z])([A-Z])/
+    // var match_delim_conson = str.match(re_conson);
+    // console.log(match_delim);
+    // console.log(match_delim_conson);
+    return new_str.toLowerCase();
 }
 
-spinalCase("Teletubbies say Eh-oh");
+console.log(spinalCase("Underscore_Teletubbies_someThing saY Eh-oh"));
 
