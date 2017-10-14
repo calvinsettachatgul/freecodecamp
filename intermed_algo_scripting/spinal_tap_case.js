@@ -12,18 +12,18 @@ String.prototype.replace()
 
 
 function spinalCase(str) {
-    // "It's such a fine line between stupid, and clever."
-    // --David St. Hubbins
     re_delim = /[\s_-]/g;
     var match_delim = str.match(re_delim);
     var new_str = str.replace(re_delim, "-");
-
-    // re_conson = /([a-z])([A-Z])/
-    // var match_delim_conson = str.match(re_conson);
-    // console.log(match_delim);
-    // console.log(match_delim_conson);
+    var re_conson = /([a-z])([A-Z])/g;
+    var match_cons = new_str.match(re_conson);
+    if(match_cons){
+        match_cons.forEach(function(cons){
+            new_str = new_str.replace(cons, cons[0] + "-" + cons[1]);
+        });
+    }   
     return new_str.toLowerCase();
 }
 
-console.log(spinalCase("Underscore_Teletubbies_someThing saY Eh-oh"));
+console.log(spinalCase("The_Andy_Griffith_Show"));
 
